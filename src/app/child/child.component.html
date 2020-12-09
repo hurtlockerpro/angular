@@ -1,0 +1,24 @@
+<p>child works!</p>
+
+<h2>Добро пожаловать {{name}}!</h2>
+Ваш юзеонейм: {{ userName }}
+Ваш возраст: {{ userAge }}
+
+<br><br>
+
+<button (click)="change(true)">+</button>
+<button (click)="change(false)">-</button>
+
+<hr><br>
+
+<div>
+	<p bold selectedSize="28px" [defaultSize]="'14px'">Hello vladimir!</p>
+	<p>Angular 10 представляет модульную архитектуру приложения</p>
+</div>
+
+<div>
+	<div *ngIf="condition; then thenBlock else elseBlock"></div>
+	<ng-template #thenBlock>--- then block ---</ng-template>
+	<ng-template #elseBlock>--- else block ---</ng-template>
+	<button (click)="toggle()">Toggle</button>
+</div>
